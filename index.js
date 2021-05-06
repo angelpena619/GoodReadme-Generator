@@ -79,7 +79,7 @@ inquirer
   );
 function makeReadme(response){
   return`
-  ## ${response.projectName}
+  # ${response.projectName}
   ##  Description
    ${response.projectDescription}
 

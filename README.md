@@ -1,7 +1,7 @@
 
-  ## Good Readme Generator
+  # Project Good Readme Generator
   ##  Description
-   this programm will create an awsome readme file.
+   this will render a rad readme
 
   ## Table of Contents
 
@@ -22,17 +22,17 @@
   ## License
    This project is licensed under the MIT License
   ## Insallation
-   To instsll necessary dependencies run the following command: npm i
+   To instsll necessary dependencies run the following command: node init -y
   ## Test
    To run tests, run the following command: node index.js
   ## Usage
-   Here are some steps for the user: do not use my repo
+   Here are some steps for the user: not much
   ## Contributing
-   do not contribute
+   no contrubution needed
   ## Questions
   
   If you have any questions or concern please email me at: 
-  angelpena619@gmail.com
+  angelpena@gmail.com
   or find my work on github
   [angelpena619](https://github.com/angelpena619)
   
