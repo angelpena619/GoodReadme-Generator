@@ -1,25 +1,112 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 inquirer
   .prompt([
     {
       type: 'input',
-      message: 'What is your user name?',
+      message: 'What is your GitHub username?',
       name: 'username',
     },
     {
-      type: 'password',
-      message: 'What is your password?',
-      name: 'password',
+      type: 'input',
+      message: 'What is your email address?',
+      name: 'email',
     },
     {
-      type: 'password',
-      message: 'Re-enter password to confirm:',
-      name: 'confirm',
+      type: 'input',
+      message: "What is your project's name",
+      name: 'projectName',
     },
+    {
+      type: 'input',
+      message: "Please write a short description of your project:",
+      name: 'projectDescription',
+    },
+    {
+      type: 'list',
+      message: "What kind of license should your project have?",
+      choices: ["MIT License","GNU License","APACHE License"],
+      name: 'licence',
+    },
+    {
+      type: 'input',
+      message: "What command should be run to install dependencies?",
+      name: 'depend',
+    },
+    {
+      type: 'input',
+      message: "What command should be run to run tests?",
+      name: 'testCommand',
+    },
+      {
+        type: 'input',
+        message: "What does the user need to know about using the repo?",
+        name: 'needToknow',
+      },
+        {
+          type: 'input',
+          message: "What does the user need to know about contributing to the repo?",
+          name: 'repoContr',
+        },
+      
   ])
-  .then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!')
+
+  .then((response) => {
+    console.log(response)
+  
+    // var username = "## " + response.username + "\n"
+    // var email = "## " + response.email + "\n"
+    // var title = "# " + response.projectName + "\n"
+    // var description = "##  #Description\n" + response.projectDescription + "\n"
+    // var licence = "## License\n This project is licensed under the" + response.licence + "\n"
+    // var depend = "## Insallation\n To instsll necessary dependencies run the following command: " + response.depend + "\n"
+    // var testCommand = "## Test\n To run tests, run the following command: " + response.testCommand + "\n"
+    // var needToknow = "## Usage\n Here are some steps for the user: " + response.needToknow + "\n"
+    // var repoContr = "## Contributing\n" + response.repoContr + "\n"
+    // var tableofContents = ` 
+    // var readme = tableofContents+title+description+licence+depend+username+email+testCommand+needToknow+repoContr
+    
+    var readme = makeReadme(response)
+
+    fs.writeFile("README.md",readme,err => {
+      console.log(err)
+
+
+    })
+    
+    }
   );
+function makeReadme(response){
+  return`
+  ## ${response.projectName}
+  ##  Description
+   ${response.projectDescription}
+
+  ## Table of Contents\n
+
+  *[Insallation](#Insallation)\n 
+  *[Usage](#Usage)\n
+  *[License](#License)\n
+  *[Contributing](#Contributing)\n
+  *[Test](#Test)\n
+  *[Questions](#Questions)\n
+  
+  ## License
+   This project is licensed under the ${response.licence}
+  ## Insallation
+   To instsll necessary dependencies run the following command: ${response.depend}
+  ## Test
+   To run tests, run the following command: ${response.testCommand}
+  ## Usage
+   Here are some steps for the user: ${response.needToknow}
+  ## Contributing
+   ${response.repoContr}
+  ## Questions
+  
+  If you have any questions or concern please email me at: 
+  ${response.email}
+  or find my work on github
+  [${response.username}](https://github.com/${response.username})
+  `
+}
