@@ -1,7 +1,7 @@
 
-  # GoodReadmerender
+  # Good Readme generator
   ##  Description
-   this is sick af
+   this will render a good readme
 
   ## Table of Contents
 
@@ -27,7 +27,7 @@ MIT License
   ## Insallation
    To install necessary dependencies run the following command: 
    
-npm init-y
+npm init -y
 
   ## Test
    To run tests, run the following command: 
@@ -37,15 +37,15 @@ node index.js
   ## Usage
    Here are some steps for the user: 
    
-nothing to know
+no
 
   ## Contributing
-   nothing to contrubute
+   nothing
    
   ## Questions
   
   If you have any questions or concern please email me at: 
-  angelpena619@gmail.com
+  angel@ndpt.com
   or find my work on github
   [angelpena619](https://github.com/angelpena619)
   
