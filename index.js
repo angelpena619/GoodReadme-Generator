@@ -93,15 +93,24 @@ function makeReadme(response){
   *[Questions](#Questions)\n
   
   ## License
-   This project is licensed under the ${response.licence}
+   This project is licensed under the 
+   \n${response.licence}
+
   ## Insallation
-   To instsll necessary dependencies run the following command: ${response.depend}
+   To install necessary dependencies run the following command: 
+   \n${response.depend}
+
   ## Test
-   To run tests, run the following command: ${response.testCommand}
+   To run tests, run the following command: 
+   \n${response.testCommand}
+
   ## Usage
-   Here are some steps for the user: ${response.needToknow}
+   Here are some steps for the user: 
+   \n${response.needToknow}
+
   ## Contributing
    ${response.repoContr}
+   
   ## Questions
   
   If you have any questions or concern please email me at: 

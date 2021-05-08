@@ -1,7 +1,7 @@
 
-  # Project Good Readme Generator
+  # GoodReadmerender
   ##  Description
-   this will render a rad readme
+   this is sick af
 
   ## Table of Contents
 
@@ -20,23 +20,32 @@
 
   
   ## License
-   This project is licensed under the
+   This project is licensed under the 
    
-   MIT License
-   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-   
+MIT License
+
   ## Insallation
-   To instsll necessary dependencies run the following command: node init -y
+   To install necessary dependencies run the following command: 
+   
+npm init-y
+
   ## Test
-   To run tests, run the following command: node index.js
+   To run tests, run the following command: 
+   
+node index.js
+
   ## Usage
-   Here are some steps for the user: not much
+   Here are some steps for the user: 
+   
+nothing to know
+
   ## Contributing
-   no contrubution needed
+   nothing to contrubute
+   
   ## Questions
   
   If you have any questions or concern please email me at: 
-  angelpena@gmail.com
+  angelpena619@gmail.com
   or find my work on github
   [angelpena619](https://github.com/angelpena619)
   
