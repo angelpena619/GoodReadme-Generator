@@ -1,7 +1,18 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  # Good Readme generator
+
+  # Homework Good Readme Generator
+  
   ##  Description
-   this will render a good readme
+   in this assigment we were asked to create a readme.md Generator, using new technologies learned in class. In this case NODE JS and Inquierer.
+   this program runs through the terminal. here is a link to the walkthrough video: 
+   https://drive.google.com/file/d/1gGU2DVS9BNbhw5TC8hK5RuNccrRfyD6r/view?usp=sharing
+   
+   the user is asked a series of questions to render the markdown, the markdown file is rendered by the fs.write file tool.
+
+   
+  ## Screenshot
+   ![](assets/readmess.jpg)
 
   ## Table of Contents
 
@@ -22,7 +33,7 @@
   ## License
    This project is licensed under the 
    
-MIT License
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Insallation
    To install necessary dependencies run the following command: 
@@ -36,11 +47,10 @@ node index.js
 
   ## Usage
    Here are some steps for the user: 
-   
-no
+   the user must run 
 
   ## Contributing
-   nothing
+   nobody
    
   ## Questions
   
